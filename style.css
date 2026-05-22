@@ -638,7 +638,7 @@ body.show {
 
   #homeTitle {
     font-size: 3em;
-    width: 200px;
+    width: 250px;
   }
 
   #homeSubtitle {
@@ -906,17 +906,17 @@ body.show {
   }
 
   .aboutImgBox {
-    margin-top: -20px;
+    margin-top: -10px;
   }
 
   .aboutImg {
-    width: 550px;
-    height: 550px;
+    width: 500px;
+    height: 500px;
     margin-top: 280px;
   }
 
   .aboutTxtBox {
-    width: 370px;
+    width: 350px;
     margin-top: 100px;
   }
 }
@@ -1531,7 +1531,7 @@ body.show {
   }
 
   .worksCard {
-    width: 360px;
+    width: 350px;
   }
 
   .worksImgBox img {
