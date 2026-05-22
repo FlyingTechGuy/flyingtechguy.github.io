@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
+	<link rel="stylesheet" href="videoPage.css">
+	<link rel="shortcut icon" type="image/png" href="src/GSLogoW.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ceab6117ab.js" crossorigin="anonymous"></script>
+    <script src="lenis.min.js"></script>
+    <script src="lenisSettings.js"></script>
+    <script type="text/javascript" src="https://cdn.userway.org/widget.js"></script>
+	<title>Guy Shemesh - Video Page</title>
+</head>
+<body>
+    <section class="videoSec">
+        <a onclick="projLink()" class="topImgBtpBtn"><svg height="1.2em" class="topImgBtpBtnArrow" viewBox="0 0 512 512"><path d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z"></path></svg></a>
+        <p id="videoTitle"></p>
+        <p id="videoSubtitle"></p>
+        <div class="videoBox">
+            <!-- <i class="fa-regular fa-circle-play" onclick="playVid()"></i> -->
+            <!-- <video id="videoVid" src="" poster=""></video> -->
+            <iframe id="ytVideo" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
+    <footer id="bottom">
+      <p class="footerLinks"><span onclick="privacyPolicyLink()">מדיניות פרטיות</span>•<span onclick="websiteRegulationsLink()">תקנון האתר</span>•<span onclick="accessibilityStatementLink()">הצהרת נגישות</span></p>
+      <p class="footerSep">|</p>
+      <p class="footerTxt">עוצב ונבנה ע״י <span>גיא שמש</span> בניית אתרי אינטרנט</p>
+    </footer>
+    <script src="videoPage.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
+	<link rel="stylesheet" href="projects.css">
+	<link rel="shortcut icon" type="image/png" href="src/GSLogoW.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ceab6117ab.js" crossorigin="anonymous"></script>
+    <script src="lenis.min.js"></script>
+    <script src="lenisSettings.js"></script>
+    <script type="text/javascript" src="https://cdn.userway.org/widget.js"></script>
+	<title>Guy Shemesh - Projects Gallery</title>
+</head>
+<body>
+    <section class="topImgSec">
+        <div class="topImgTxtBox">
+            <p class="topImgSubtitle">גיא שמש</p>
+            <p class="topImgTitle">גלריית פרוייקטים</p>
+        </div>
+        <a onclick="homeLink();" class="topImgBtpBtn"><svg height="1.2em" class="topImgBtpBtnArrow" viewBox="0 0 512 512"><path d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z"></path></svg></a>
+    </section>
+    <section class="projectsSec">
+        <!-- 
+        -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+        old filter menu:
+        <div class="sortBtnsBox">
+            <ul class="ull">
+                <li class="list actives" data-filter="all">All</li>
+                <li class="list" data-filter="1">Web Build</li>
+                <li class="list" data-filter="2">Video Edit</li>
+                <li class="list" data-filter="3">Drone Shot</li>
+            </ul>
+        </div>
+        -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+        -->
+        <div class="filterCont">
+            <button class="filterBtn" id="filterBtn" onclick="showFilter()">
+                <i class="fa-solid fa-filter"></i>
+                <span>סינון לפי תחומים</span>
+            </button>
+            <div class="filterBox" id="filterBox">
+                <a class="filterChoice actives" onclick="showFilter()" data-filter="all">הכל</a>
+                <a class="filterChoice" onclick="showFilter()" data-filter="1">בניית אתרים</a>
+                <a class="filterChoice" onclick="showFilter()" data-filter="2">עריכת וידאו</a>
+                <a class="filterChoice" onclick="showFilter()" data-filter="3">צילום רחפנים</a>
+            </div>
+        </div>
+        <div class="projectsCont">
+            <!-- Web: Happytec -->
+            <div class="worksCard" data-item="1">
+                <div class="worksImgBox">
+                    <img src="src/pjwHappytec.png"></img>
+                </div>
+                <div class="worksInfoBox">
+                    <p class="worksInfoTitle">Happytec</p>
+                    <p class="worksInfoSubtitle">דף נחיתה מעוצב לחברת טכנולוגיה הנותנת פתרונות צילום דפוס ומדיה</p>
+                </div>
+                <div class="worksBottomBox">
+                    <p class="worksBottomTag">#אתרים</p>
+                    <a href="https://happytec.co.il/" target="_blank" style="text-decoration: none;"><button class="worksBottomBtn">לצפייה בפרוייקט<div class="arrow-wrapper"><div class="arrow"></div></div></button></a>
+                </div>
+            </div>
+            <!-- Video: Kosel -->
+            <div class="worksCard" data-item="2">
+                <div class="worksImgBox">
+                    <img src="src/pjvKosel.png"></img>
+                </div>
+                <div class="worksInfoBox">
+                    <p class="worksInfoTitle">סרטון תדמית לקיטנת קוסל</p>
+                    <p class="worksInfoSubtitle">סרטון התדמית שמראה איך קייטנת קוסל הופכת את הקיץ הקרוב למושלם עבור ילדיכם</p>
+                </div>
+                <div class="worksBottomBox">
+                    <p class="worksBottomTag">#וידאו</p>
+                    <button class="worksBottomBtn" onclick="videoPlayerPage('7')">לצפייה בפרוייקט<div class="arrow-wrapper"><div class="arrow"></div></div></button>
+                </div>
+            </div>
+            <!-- Web: KAL.PDF -->
+            <div class="worksCard" data-item="1">
+                <div class="worksImgBox">
+                    <img src="src/pjwPdf.png"></img>
+                </div>
+                <div class="worksInfoBox">
+                    <p class="worksInfoTitle">KAL.PDF</p>
+                    <p class="worksInfoSubtitle">אתר אינטרנט פעיל לעריכת קבצי PDF אונליין בחינם בנוחות ובשמירת פרטיות מלאה</p>
+                </div>
+                <div class="worksBottomBox">
+                    <p class="worksBottomTag">#אתרים</p>
+                    <a href="https://anisuper.com/pdf/" target="_blank" style="text-decoration: none;"><button class="worksBottomBtn">לצפייה בפרוייקט<div class="arrow-wrapper"><div class="arrow"></div></div></button></a>
+                </div>
+            </div>
+            <!-- Web: HappyFrame From Happytec -->
+            <div class="worksCard" data-item="1">
+                <div class="worksImgBox">
+                    <img src="src/pjwHappyFrame.png"></img>
+                </div>
+                <div class="worksInfoBox">
+                    <p class="worksInfoTitle">HappyFrame מאת Happytec</p>
+                    <p class="worksInfoSubtitle">אתר אינטרנט פעיל להזמנת תמונות במסגרת כולל חוויית משתמש</p>
+                </div>
+                <div class="worksBottomBox">
+                    <p class="worksBottomTag">#אתרים</p>
+                    <a href="https://anisuper.com/aniframe/" target="_blank" style="text-decoration: none;"><button class="worksBottomBtn">לצפייה בפרוייקט<div class="arrow-wrapper"><div class="arrow"></div></div></button></a>
+                </div>
+            </div>
+            <!-- Video: Shoham Bar Mitzva -->
+            <div class="worksCard" data-item="2">
+                <div class="worksImgBox">
+                    <img src="src/pjvBarMizvaShoham.png"></img>
+                </div>
+                <div class="worksInfoBox">
+                    <p class="worksInfoTitle">בר מצווה לשהם</p>
+                    <p class="worksInfoSubtitle">סרטון תמונות רצות אלגנטי לאירוע בר המצווה של שוהם</p>
+                </div>
+                <div class="worksBottomBox">
+                    <p class="worksBottomTag">#וידאו</p>
+                    <button class="worksBottomBtn" onclick="videoPlayerPage('1')">לצפייה בפרוייקט<div class="arrow-wrapper"><div class="arrow"></div></div></button>
+                </div>
+            </div>
+            <!-- Drone: Microsoft Campus Herzelia -->
+            <!--<div class="worksCard" data-item="3">
+                <div class="worksImgBox">
+                    <img src="src/pjdMicrosoftHerzelia.png"></img>
+                </div>
+                <div class="worksInfoBox">
+                    <p class="worksInfoTitle">Microsoft Campus Herzelia</p>
+                    <p class="worksInfoSubtitle">A video of Microsoft campus in Herzelia from the birds eyes</p>
+                </div>
+                <div class="worksBottomBox">
+                    <p class="worksBottomTag">#DroneShot</p>
+                    <button class="worksBottomBtn" onclick="videoPlayerPage('2')">לצפייה בפרוייקט<div class="arrow-wrapper"><div class="arrow"></div></div></button>
+                </div>
+            </div>-->
+            <!-- Web: Pomelit 12 Shoham -->
+            <div class="worksCard" data-item="1">
+              <div class="worksImgBox">
+                  <img src="src/pjwPomelit12.png"></img>
+              </div>
+              <div class="worksInfoBox">
+                  <p class="worksInfoTitle">פומלית 12 שוהם</p>
+                  <p class="worksInfoSubtitle">דף נחיתה מעוצב המציג פרטים על דירה להשכרה</p>
+              </div>
+              <div class="worksBottomBox">
+                  <p class="worksBottomTag">#אתרים</p>
+                  <a href="https://flyingtechguy.github.io/pamolit12" target="_blank" style="text-decoration: none;"><button class="worksBottomBtn">לצפייה בפרוייקט<div class="arrow-wrapper"><div class="arrow"></div></div></button></a>
+              </div>
+            </div>
+            <!-- Drone: Mandarin Hotel Tel  Aviv -->
+            <!--<div class="worksCard" data-item="3">
+                <div class="worksImgBox">
+                    <img src="src/pjdMandarinHotel.png"></img>
+                </div>
+                <div class="worksInfoBox">
+                    <p class="worksInfoTitle">Mandarin Hotel Tel  Aviv</p>
+                    <p class="worksInfoSubtitle">A video of Mandarin hotel in Tel Aviv from the birds eyes</p>
+                </div>
+                <div class="worksBottomBox">
+                    <p class="worksBottomTag">#DroneShot</p>
+                    <button class="worksBottomBtn" onclick="videoPlayerPage('3')">לצפייה בפרוייקט<div class="arrow-wrapper"><div class="arrow"></div></div></button>
+                </div>
+            </div>-->
+            <!-- Drone: Kedma Neve Ilan -->
+            <div class="worksCard" data-item="3">
+                <div class="worksImgBox">
+                    <img src="src/pjdKedma.png"></img>
+                </div>
+                <div class="worksInfoBox">
+                    <p class="worksInfoTitle">קדמה נווה אילן</p>
+                    <p class="worksInfoSubtitle">סרטון של אולם האירועים קדמה בנווה אילן מלמעלה</p>
+                </div>
+                <div class="worksBottomBox">
+                    <p class="worksBottomTag">#רחפנים</p>
+                    <button class="worksBottomBtn" onclick="videoPlayerPage('4')">לצפייה בפרוייקט<div class="arrow-wrapper"><div class="arrow"></div></div></button>
+                </div>
+            </div>
+            <!-- Video: MotorCity ProDrive -->
+            <div class="worksCard" data-item="2">
+                <div class="worksImgBox">
+                    <img src="src/pjvMotorCity.png"></img>
+                </div>
+                <div class="worksInfoBox">
+                    <p class="worksInfoTitle">יום מירוץ של ProDrive ב MotorCity</p>
+                    <p class="worksInfoSubtitle"> סרטון ערוך של אירוע מירוץ של ProDrive במסלול MotorCity בדרום הארץ</p>
+                </div>
+                <div class="worksBottomBox">
+                    <p class="worksBottomTag">#וידאו</p>
+                    <button class="worksBottomBtn" onclick="videoPlayerPage('5')">לצפייה בפרוייקט<div class="arrow-wrapper"><div class="arrow"></div></div></button>
+                </div>
+            </div>
+            <!-- Drone: Ein Karem -->
+            <div class="worksCard" data-item="3">
+                <div class="worksImgBox">
+                    <img src="src/pjdEinKarem.png"></img>
+                </div>
+                <div class="worksInfoBox">
+                    <p class="worksInfoTitle">עין כרם מהאוויר</p>
+                    <p class="worksInfoSubtitle">צילום רחפן של עין כרם והאיזור סביבה מנקודת מבט של ציפור</p>
+                </div>
+                <div class="worksBottomBox">
+                    <p class="worksBottomTag">#רחפנים</p>
+                    <button class="worksBottomBtn" onclick="videoPlayerPage('6')">לצפייה בפרוייקט<div class="arrow-wrapper"><div class="arrow"></div></div></button>
+                </div>
+            </div>
+            <!-- Video: ??? -->
+            <!-- <div class="worksCard" data-item="2">
+                <div class="worksImgBox">
+                    <img src="src/pjTempImg.jpg"></img>
+                </div>
+                <div class="worksInfoBox">
+                    <p class="worksInfoTitle">???</p>
+                    <p class="worksInfoSubtitle">???<br>???</p>
+                </div>
+                <div class="worksBottomBox">
+                    <p class="worksBottomTag">#VideoEdit</p>
+                    <button class="worksBottomBtn">לצפייה בפרוייקט<div class="arrow-wrapper"><div class="arrow"></div></div></button>
+                </div>
+            </div> -->
+        </div>
+    </section>
+    <div class="bttBtn" id="bttBtn"><i class="fa-solid fa-arrow-up"></i></div>
+    <footer id="bottom">
+      <p class="footerLinks"><span onclick="privacyPolicyLink()">מדיניות פרטיות</span>•<span onclick="websiteRegulationsLink()">תקנון האתר</span>•<span onclick="accessibilityStatementLink()">הצהרת נגישות</span></p>
+      <p class="footerSep">|</p>
+      <p class="footerTxt">עוצב ונבנה ע״י <span>גיא שמש</span> בניית אתרי אינטרנט</p>
+    </footer>
+    <script src="projects.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>

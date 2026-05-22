@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
+	  <link rel="shortcut icon" type="image/png" href="src/GSLogoW.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ceab6117ab.js" crossorigin="anonymous"></script>
+    <script src="lenis.min.js"></script>
+    <script src="lenisSettings.js"></script>
+    <script type="text/javascript" src="https://cdn.userway.org/widget.js"></script>
+	  <title>Guy Shemesh - Website Regulations</title>
+    <style>
+@font-face {
+  font-family: "r";
+  src: url("src/he.ttf");
+}
+
+html {
+	scroll-behavior: smooth;
+  user-select: none;
+  overscroll-behavior: none;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+:root {
+  --darkgray: rgb(26, 26, 26);
+  --darkred: #c7992f; /*D5AC4E*/
+  --black: #000;
+  --white: #fff;
+}
+
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  font-family: 'r';
+  /* font-family: 'Poppins', sans-serif; */
+  /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+  /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+}
+
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+.uwy.userway_p1 .userway_buttons_wrapper {
+  position: fixed;
+  top: auto !important;
+  bottom: 20px !important;
+  left: 70px !important;
+}
+
+body {
+  /* font-family: Arial, Helvetica, sans-serif; */
+  overflow-x: hidden;
+  /* background-color: #0c0c0c; */
+  background-color: #000000;
+  color: #fff;
+  opacity: 0;
+  transition: 0.25s;
+  max-width: 100dvw;
+  overscroll-behavior: none;
+}
+
+body.show {
+  opacity: 1;
+}
+
+.topImgBtpBtn {
+  position: fixed;
+  z-index: 10001;
+  top: 22px;
+  right: 20px;
+  width: 45px;
+  height: 45px;
+  background: #D5AC4E;
+  box-shadow: 0px 0px 2px #D5AC4E;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+  transition: 0.2s;
+}
+
+.topImgBtpBtn:hover {
+  transform: scale(1.04);
+}
+
+.topImgBtpBtn:active {
+  transform: scale(1.02);
+}
+
+.topImgBtpBtnArrow {
+  transform: rotate(90deg);
+  transition: .4s ease-in-out;
+}
+
+.topImgBtpBtnArrow path {
+  fill: white;
+}
+
+.topImgBtpBtn:hover .topImgBtpBtnArrow {
+  animation: slide-in-bottom .7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes slide-in-bottom {
+  50% {
+    transform: translateX(2px) rotate(90deg);
+  }
+
+  100% {
+    transform: translateX(0px) rotate(90deg);
+  }
+}
+
+.contentSec {
+    position: relative;
+    width: 100%;
+    direction: rtl;
+    padding: 20px;
+    padding-block: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contentCont {
+    position: relative;
+    max-width: 900px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.contentBox {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+h1 {
+    position: relative;
+    font-size: 2.8em;
+    margin-bottom: 20px;
+}
+
+h1::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -14px;
+    width: 100px;
+    height: 3px;
+    border-radius: 20px;
+    background-color: #D5AC4E;
+}
+
+h2 {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -12px;
+    width: 40px;
+    height: 3px;
+    border-radius: 20px;
+    background-color: #D5AC4E;
+}
+
+ul {
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+ul li::marker {
+    color: #D5AC4E;
+}
+
+li, h4 {
+    font-size: 1.1em;
+    line-height: 24px;
+}
+
+.bttBtn {
+  position: fixed;
+  bottom: 94px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  transition: 0.3s;
+  border-radius: 50%;
+  font-size: 1.6em;
+  color: #fff;
+  background-color: #D5AC4E;
+  box-shadow: 0px 0px 2px #D5AC4E;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  z-index: 1001;
+  opacity: 0;
+  transform: scale(0.5);
+  pointer-events: none;
+}
+
+.bttBtn.show {
+  opacity: 1;
+  transform: scale(1);
+  pointer-events: auto;
+}
+
+.bttBtn:hover {
+  transform: scale(1.05);
+}
+
+@media screen and (max-width: 900px) {
+  .contentSec {
+    padding-block: 140px;
+  }
+}
+
+footer {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  color: #fff;
+  background-color: #000;
+  border-top: 1px solid #d5ac4e80;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row-reverse;
+  gap: 20px;
+  direction: rtl;
+}
+
+.footerTxt {
+  font-family: "r";
+  font-size: 1.2em;
+}
+
+.footerTxt span {
+  color: #D5AC4E;
+  font-family: "r";
+}
+
+.footerSep {
+  font-family: "r";
+  font-size: 0.95em;
+  color: rgba(255, 255, 255, 0.2);
+}
+
+.footerLinks {
+  font-family: "r";
+  font-size: 1.2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: #D5AC4E;
+}
+
+.footerLinks span {
+  color: #fff;
+  font-family: "r";
+  transition: 0.1s;
+  cursor: pointer;
+}
+
+.footerLinks span:hover {
+  color: #D5AC4E;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 970px) {
+  footer {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .footerSep {
+    display: none;
+  }
+
+  .footerLinks {
+    font-size: 1.08em;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .uwy.userway_p1 .userway_buttons_wrapper {
+    bottom: 94px !important;
+    left: 70px !important;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  footer {
+    gap: 5px;
+  }
+
+  .footerTxt {
+    font-size: 1em;
+  }
+
+  .footerLinks {
+    font-size: 0.9em;
+  }
+}
+    </style>
+</head>
+<body>
+    <a onclick="homeLink();" class="topImgBtpBtn"><svg height="1.2em" class="topImgBtpBtnArrow" viewBox="0 0 512 512"><path d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z"></path></svg></a>
+    <section class="contentSec">
+        <div class="contentCont">
+            <div class="contentBox">
+                <h1>תקנון האתר</h1>
+            </div>
+            <div class="contentBox">
+                <h2>כללי</h2>
+                <ul>
+                    <li>האתר מופעל על ידי גיא שמש ומשמש להצגת מידע, פרויקטים ותכנים לציבור.</li>
+                    <li>הגלישה והשימוש באתר מהווים הסכמה מלאה לתנאי התקנון.</li>
+                </ul>
+            </div>
+            <div class="contentBox">
+                <h2>שימוש מותר</h2>
+                <ul>
+                    <li>מותר להשתמש באתר לצורכי צפייה, קריאה ולימוד אישי בלבד.</li>
+                    <li>חל איסור להעתיק, להפיץ או להשתמש בתכני האתר ללא אישור מראש ובכתב.</li>
+                    <li>המשתמש מתחייב שלא לבצע פעולות העלולות לפגוע באתר או במפעיליו.</li>
+                </ul>
+            </div>
+            <div class="contentBox">
+                <h2>אחריות התוכן</h2>
+                <ul>
+                    <li>התכנים באתר מוצגים כפי שהם (As-Is). ייתכנו טעויות או אי-דיוקים, ואין לראות במידע משום התחייבות או ייעוץ מקצועי.</li>
+                    <li>ייתכנו קישורים לאתרים חיצוניים – אין לנו אחריות על תוכנם או על השירותים הניתנים בהם.</li>
+                </ul>
+            </div>
+            <div class="contentBox">
+                <h2>הגבלת אחריות</h2>
+                <h4>מפעילי האתר אינם אחראים לנזקים שייגרמו עקב שימוש באתר או הסתמכות על התוכן המופיע בו.</h4>
+            </div>
+            <div class="contentBox">
+                <h2>שינויים בתקנון</h2>
+                <h4>התקנון עשוי להשתנות מעת לעת. הגרסה המעודכנת תפורסם באתר ותיכנס לתוקף מיד עם פרסומה.</h4>
+            </div>
+        </div>
+    </section>
+    <div class="bttBtn" id="bttBtn"><i class="fa-solid fa-arrow-up"></i></div>
+    <footer id="bottom">
+      <p class="footerLinks"><span onclick="privacyPolicyLink()">מדיניות פרטיות</span>•<span onclick="websiteRegulationsLink()">תקנון האתר</span>•<span onclick="accessibilityStatementLink()">הצהרת נגישות</span></p>
+      <p class="footerSep">|</p>
+      <p class="footerTxt">עוצב ונבנה ע״י <span>גיא שמש</span> בניית אתרי אינטרנט</p>
+    </footer>
+    <script>
+setTimeout(function() {
+    document.querySelector("body").classList.add("show");
+}, 500);
+
+function homeLink() {
+    document.querySelector("body").style.opacity = 0;
+    setTimeout(function(){
+        window.location.replace("index.html#bottom");
+    }, 250);
+}
+
+function privacyPolicyLink() {
+    document.querySelector("body").style.opacity = 0;
+    setTimeout(function(){
+        window.location.replace("privacyPolicy.html");
+    }, 250);
+}
+
+function websiteRegulationsLink() {
+    document.querySelector("body").style.opacity = 0;
+    setTimeout(function(){
+        window.location.replace("websiteRegulations.html");
+    }, 250);
+}
+
+function accessibilityStatementLink() {
+    document.querySelector("body").style.opacity = 0;
+    setTimeout(function(){
+        window.location.replace("accessibilityStatement.html");
+    }, 250);
+}
+
+document.addEventListener('scroll', function() {
+    if(window.scrollY > 600) {
+        document.getElementById("bttBtn").classList.add("show");
+    } else {
+        document.getElementById("bttBtn").classList.remove("show");
+    }
+});
+
+document.getElementById("bttBtn").addEventListener("click", function() {
+    window.scrollTo(0, 0);
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
+	  <link rel="stylesheet" href="style.css">
+	  <link rel="shortcut icon" type="image/png" href="src/GSLogoW.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ceab6117ab.js" crossorigin="anonymous"></script>
+    <script src="lenis.min.js"></script>
+    <script src="lenisSettings.js"></script>
+    <script type="text/javascript" src="https://cdn.userway.org/widget.js"></script>
+	  <title>Guy Shemesh - Technology Solutions</title>
+</head>
+<body>
+    <nav id="navCont">
+        <span class="navLogo"><a onclick="homeLink()" class="navLogoLink"><img src="src/GSLogoW.png" alt="Logo" class="navLogoImg"></a></span>
+        <ul class="navMenu">
+            <li class="navTxt interactive-element"><a href="#about">קצת עליי</a></li>
+            <li class="navTxt interactive-element"><a href="#solutions">פתרונות</a></li>
+            <li class="navTxt interactive-element"><a href="#projects">פרוייקטים</a></li>
+            <li class="navTxt interactive-element"><a href="#contact">יצירת קשר</a></li>
+            <div class="socialmMediaCont">
+				        <span class="socialmMediaBtn"><a href="https://www.instagram.com/systechnoguy/" target="_blank" class="smbl instBtn"><i class="fa-brands fa-instagram"></i></a></span>
+				        <span class="socialmMediaBtn"><a href="https://www.youtube.com/@guy.shemesh" target="_blank" class="smbl ytBtn"><i class="fa-brands fa-youtube"></i></a></span>
+				        <span class="socialmMediaBtn"><a href="https://wa.me/972548000872" target="_blank" class="smbl whatsappBtn"><i class="fa-brands fa-whatsapp"></i></a></span>
+				    </div>
+        </ul>
+        <div class="mobileNav">
+            <a onclick="homeLink()" class="navLogoLink"><img src="src/GSLogoW.png" alt="Logo" class="navLogoImg"></a>
+            <button id="hamburgerBar" class="menu__icon"><span></span><span></span></button>
+        </div>
+    </nav>
+    <div id="sideBar" class="sideMenu">
+        <ul class="mobileMenu">
+            <li onclick="toggleMenu()" class="navTxt interactive-element"><a href="#about">קצת עליי</a></li>
+            <li onclick="toggleMenu()" class="navTxt interactive-element"><a href="#solutions">פתרונות</a></li>
+            <li onclick="toggleMenu()" class="navTxt interactive-element"><a href="#projects">פרוייקטים</a></li>
+            <li onclick="toggleMenu()" class="navTxt interactive-element"><a href="#contact">יצירת קשר</a></li>
+        </ul>
+        <div class="socialmMediaContSide">
+            <span class="socialmMediaBtn"><a href="https://www.instagram.com/systechnoguy/" target="_blank" class="smbl instBtn"><i class="fa-brands fa-instagram"></i></a></span>
+            <span class="socialmMediaBtn"><a href="https://www.youtube.com/@guy.shemesh" target="_blank" class="smbl ytBtn"><i class="fa-brands fa-youtube"></i></a></span>
+            <span class="socialmMediaBtn"><a href="https://wa.me/972548000872" target="_blank" class="smbl whatsappBtn"><i class="fa-brands fa-whatsapp"></i></a></span>
+        </div>
+    </div>
+    <section class="homeCont">
+        <div id="homeTxtBox">
+          <p id="homeTitle">שלום! שמי <span>גיא שמש</span></p>
+          <p class="homeSubtitle" id="homeSubtitle">אני <span id="homeSubtitleTypingEffect"></span><span id="homeSubtitleLine"></span></p>
+        </div>
+        <a href="#about" class="scroll-down interactive-element" id="scrollDown">
+			  	<div class="mouse">
+			  		<span></span>
+			  	</div>
+			  	<div class="arrow">
+			  		<span></span>
+			  	</div>
+			  </a>
+        <img id="homeBg" src="src/bgBg.png" alt="">
+        <img id="homeBgMan" src="src/bgMan.png" alt="">
+    </section>
+    <section class="aboutCont">
+      <div id="about"></div>
+      <div class="aboutRow">
+        <div class="aboutImgBox" id="aboutImgBox">
+          <img src="src/aboutPic.png" alt="about" class="aboutImg">
+          <!-- <div class="aboutLine"></div> -->
+        </div>
+        <div class="aboutTxtBox" id="aboutTxtBox">
+          <h1 class="aboutTitle">מי אני?</h1>
+          <p class="aboutInfo"><span class="aboutInfoBox"><span id="aboutInfoTxt"></span><span id="aboutInfoLine1"></span></span><span class="aboutInfoBox"><span id="aboutInfoMoreInfo"></span><span id="aboutInfoLine2"></span></span></p>
+          <!-- <h3 class="aboutSubtitle">רמת ניסיון בכל תחום:</h3>
+          <ul class="expList">
+            <li class="expTxt">תכנות - <span>6 שנים</span></li>
+            <li class="expTxt">בניית אתרים - <span>5 שנים</span></li>
+            <li class="expTxt">עריכת וידאו - <span>3.5 שנים</span></li>
+            <li class="expTxt">צילום רחפן - <span>4.5 שנים</span></li>
+          </ul> -->
+        </div>
+      </div>
+    </section>
+    <section class="serviceCont">
+      <div id="solutions"></div>
+      <div class="serviceTxtBox">
+          <p class="serviceTitle" id="serviceTitle">איזה פתרון אתם מחפשים?</p>
+          <p class="serviceSubtitle"></p>
+      </div>
+      <div class="serviceCardsBox">
+        <div class="card" id="card1">
+          <div class="content">
+            <div class="back">
+              <div class="back-content">
+                <div class="topDiv">
+                  <i class="fa-solid fa-code serviceIcon" style="font-size: 4em;"></i>
+                  <strong class="serviceCardTitle">פיתוח אתרים</strong>
+                </div>
+                <p class="serviceLm" onclick="webLink()">מידע נוסף</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card" id="card2">
+          <div class="content">
+            <div class="back">
+              <div class="back-content">
+                <div class="topDiv">
+                  <i class="fa-solid fa-clapperboard serviceIcon" style="font-size: 4em;"></i>
+                  <strong class="serviceCardTitle">עריכת וידאו</strong>
+                </div>
+                <p class="serviceLm" onclick="editLink()">מידע נוסף</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card" id="card3">
+          <div class="content">
+            <div class="back">
+              <div class="back-content">
+                <div class="topDiv">
+                  <i class="fa-solid fa-photo-film serviceIcon" style="font-size: 4em;"></i>
+                  <strong class="serviceCardTitle">צילום אווירי</strong>
+                </div>
+                <p class="serviceLm" onclick="droneLink()">מידע נוסף</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="worksCont">
+      <div id="projects"></div>
+      <div class="worksBottomFlare"></div>
+      <div class="worksTxtBox">
+          <p class="worksTitle" id="worksTitle">פרוייקטים נבחרים</p>
+          <p class="worksSubtitle"></p>
+      </div>
+      <div class="worksCardsBox">
+        <!-- <div class="worksCard">
+          <div class="worksImgBox">
+              <img src="src/worksWeb.png"></img>
+          </div>
+          <div class="worksInfoBox">
+              <p class="worksInfoTitle">Pamolit 12 Shoham</p>
+              <p class="worksInfoSubtitle">A website for an apartment for rent</p>
+          </div>
+          <div class="worksBottomBox">
+              <p class="worksBottomTag">#WebBuild</p>
+              <button class="worksBottomBtn">View Project<div class="arrow-wrapper"><div class="arrow"></div></div></button>
+          </div>
+        </div> -->
+        <div class="worksCardBox" id="worksCard1">
+          <div class="worksCard">
+            <div class="worksImgBox">
+                <img src="src/pjwHappyFrame.png"></img>
+            </div>
+            <div class="worksInfoBox">
+                <p class="worksInfoTitle">HappyFrame מאת Happytec</p>
+                <p class="worksInfoSubtitle">אתר אינטרנט פעיל להזמנת תמונות במסגרת כולל חוויית משתמש</p>
+            </div>
+            <div class="worksBottomBox">
+                <p class="worksBottomTag">#אתרים</p>
+                <a href="https://anisuper.com/aniframe/" target="_blank" style="text-decoration: none;"><button class="worksBottomBtn">לצפייה בפרוייקט<div class="arrow-wrapper"><div class="arrow"></div></div></button></a>
+            </div>
+          </div>
+        </div>
+        <div class="worksCardBox" id="worksCard2">
+          <div class="worksCard">
+            <div class="worksImgBox">
+                <img src="src/pjvMotorCity.png"></img>
+            </div>
+            <div class="worksInfoBox">
+                <p class="worksInfoTitle">יום מירוץ של ProDrive ב MotorCity</p>
+                <p class="worksInfoSubtitle"> סרטון ערוך של אירוע מירוץ של ProDrive במסלול MotorCity בדרום הארץ</p>
+            </div>
+            <div class="worksBottomBox">
+                <p class="worksBottomTag">#וידאו</p>
+                <button class="worksBottomBtn" onclick="videoPlayerPage('5')">לצפייה בפרוייקט<div class="arrow-wrapper"><div class="arrow"></div></div></button>
+            </div>
+          </div>
+        </div>
+        <div class="worksCardBox" id="worksCard3">
+          <div class="worksCard">
+            <div class="worksImgBox">
+                <img src="src/pjdEinKarem.png"></img>
+            </div>
+            <div class="worksInfoBox">
+                <p class="worksInfoTitle">עין כרם מהאוויר</p>
+                <p class="worksInfoSubtitle">צילום רחפן של עין כרם והאיזור סביבה מנקודת מבט של ציפור</p>
+            </div>
+            <div class="worksBottomBox">
+                <p class="worksBottomTag">#רחפנים</p>
+                <button class="worksBottomBtn" onclick="videoPlayerPage('6')">לצפייה בפרוייקט<div class="arrow-wrapper"><div class="arrow"></div></div></button>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="worksCard">
+          <div class="worksImgBox">
+              <img src="src/pjdMicrosoftHerzelia.png"></img>
+          </div>
+          <div class="worksInfoBox">
+              <p class="worksInfoTitle">Microsoft Campus Herzelia</p>
+              <p class="worksInfoSubtitle">A video of Microsoft campus in Herzelia from the birds eyes</p>
+          </div>
+          <div class="worksBottomBox">
+              <p class="worksBottomTag">#DroneShot</p>
+              <button class="worksBottomBtn" onclick="videoPlayerPage('2')">View Project<div class="arrow-wrapper"><div class="arrow"></div></div></button>
+          </div>
+        </div> -->
+      </div>
+      <a class="worksMoreBtn" id="worksMoreBtn" onclick="projLink()">פרוייקטים נוספים</a>
+    </section>
+    <section class="contactCont">
+      <div id="contact"></div>
+      <div class="contactTop">
+			  <p class="contactTitle">דברו איתי</p>
+      </div>
+      <div class="formCont">
+        <div class="formInfo"></div>
+        <div class="formForm">
+          <form method="post">
+            <div class="formInputBox" style="width: 100%;">
+              <label for="name" class="formLabel">שם מלא: <span class="formLabelMark">*</span></label>
+              <input class="formInput" type="text" name="name" id="name" placeholder="שם מלא" required>
+            </div>
+            <div class="formTextareaBox">
+              <label for="message" class="formLabel">הודעה: <span class="formLabelMark">*</span></label>
+              <textarea rows="5" class="formInput" name="message" id="message" placeholder="הודעה" required></textarea>
+            </div>
+            <div class="submitBtnBox" id="sentMessageBtn">
+              <button class="submitBtn"><svg fill="currentColor" viewBox="0 0 24 24" class="submitIcon"><path clip-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z" fill-rule="evenodd"></path></svg>שלח</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer id="bottom">
+      <p class="footerLinks"><span onclick="privacyPolicyLink()">מדיניות פרטיות</span>•<span onclick="websiteRegulationsLink()">תקנון האתר</span>•<span onclick="accessibilityStatementLink()">הצהרת נגישות</span></p>
+      <p class="footerSep">|</p>
+      <p class="footerTxt">עוצב ונבנה ע״י <span>גיא שמש</span> בניית אתרי אינטרנט</p>
+    </footer>
+    <!-- <div class="cursor-dot" id="dot"></div>
+    <div class="cursor-outline" id="outline"></div> -->
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>
