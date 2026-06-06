@@ -36,6 +36,7 @@ html::-webkit-scrollbar {
   /* cursor: none !important; */
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+  touch-action: pan-y !important;
   /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
   /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
 }
