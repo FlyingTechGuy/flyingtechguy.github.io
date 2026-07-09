@@ -12,6 +12,7 @@ html {
   width: 100%;
   margin: 0;
   padding: 0;
+  -webkit-overflow-scrolling: touch;
 }
 
 html::-webkit-scrollbar {
