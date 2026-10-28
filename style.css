@@ -151,7 +151,7 @@ body.show {
   
 #navCont.sticky {
   height: 80px;
-  background-color: #0c0c0ce8;
+  background-color: #0c0c0cc0;
   /* backdrop-filter: blur(50px); */
   /* box-shadow: 0px 5px 10px #00000050; */
   border-bottom: 1px solid #ffffff30;
